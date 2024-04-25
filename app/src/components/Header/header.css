@@ -1,0 +1,146 @@
+.logo img {
+	width: 160px;
+}
+
+.header {
+	padding: 20px 0;
+}
+
+.header .container {
+	padding: 10px 0;
+	border-bottom: 2px solid var(--light-gray-accent);
+}
+
+.header-flex {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.header-flex__elem {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+
+.header-flex__elem .text {
+	font-weight: 700;
+	opacity: .7;
+}
+
+.header-nav .nav-list {
+	display: flex;
+	gap: 40px;
+}
+
+.nav-link {
+	font-size: 18px;
+	transition: color .2s linear, text-shadow .2s linear;
+}
+
+.nav-link.active {
+	color: var(--contrast-color);
+	text-shadow: 0.5px 0 0 var(--contrast-color);
+}
+
+a.nav-link:hover {
+	color: var(--contrast-color);
+	text-shadow: 0.5px 0 0 var(--contrast-color);
+}
+
+.burger-menu {
+	display: none;
+}
+
+@media (max-width: 580px) {
+	.header .container {
+		padding: 10px 20px;
+	}
+
+	.header-flex {
+		display: none;
+	}
+
+	.burger-menu {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.burger {
+		width: 40px;
+		height: 28px;
+	}
+
+	.burger span {
+		position: relative;
+		display: block;
+		width: 100%;
+		height: 2px;
+		background: var(--several-color);
+	}
+
+	.burger span::before,
+	.burger span::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		background: var(--several-color);
+	}
+
+	.burger span::before {
+		top: 14px;
+	}
+
+	.burger span::after {
+		top: 28px;
+	}
+}
+
+.burger-menu-nav-container {
+	padding: 40px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	min-width: 100%;
+	min-height: 100%;
+	background: var(--white);
+	z-index: 1000;
+}
+
+.burger-menu-nav-flex {
+	margin-bottom: 20px;
+	padding: 10px 0;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 2px solid var(--light-gray-accent);
+}
+
+.burger-menu-nav-flex .cross {
+	align-self: center;
+}
+
+.burger-menu-nav-container .nav-link {
+	font-size: 3.5vh;
+}
+
+.burger-menu-nav-container.active {
+	display: block;
+	animation: showBurgerMenu .4s ease forwards;
+}
+
+@keyframes showBurgerMenu {
+	0% {
+		opacity: 0;
+		transform: translate(100%);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}

@@ -1,0 +1,64 @@
+.theory-article {
+	position: relative;
+	padding: 40px 20px 50px;
+	margin: 30px auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+	max-width: 750px;
+	height: 250px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.theory-article.active {
+	height: auto;
+}
+
+.theory-article img {
+	width: 150px;
+	max-height: 150px;
+}
+
+.theory-article ol {
+	padding-left: 16px;
+}
+
+.readmore {
+	padding: 20px 0 10px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 700;
+	color: var(--light-medium-gray);
+	background: linear-gradient(0deg, rgba(255,255,255,1) 57%, rgba(255,255,255,0) 100%);
+	transition: color .3s ease;
+	cursor: pointer;
+}
+
+.text-accent {
+	color: var(--dark-gray); 
+}
+
+.cipher-name {
+	color: var(--contrast-color);
+}
+
+.readmore:hover {
+	color: var(--contrast-color);
+}
+
+@media (max-width: 750px) {
+	.readmore {
+		padding: 40px 0 10px;
+	}
+
+	.theory-article {
+		height: 300px;
+	}
+}
