@@ -1,75 +1,41 @@
-# Cipher
+# CryptifyHub
 
-<div align="center">
-  <img src="https://github.com/iamlorddop/cipher/blob/main/img/logo.svg" alt="crypto logo" />
-</div>
+**CryptifyHub** is a web application for teaching the basics of cryptography.
 
-**Cipher** это веб-приложение для обучения основам криптографии. В нем вы изучите:
+# Installation
 
-- Шифр Цезаря: криптоанализ по открытому тексту
-- Шифр Цезаря: криптоанализ с использованием статистических свойств языка
-- Шифр Цезаря: криптоанализ методом «полного перебора»
-- Шифр одноалфавитной замены: криптоанализ по фрагменту открытого текста
-- Шифр Тритемиуса
-- Цифровая подпись по алгоритму RSA
+You have installed the project, you need to go to the application folder and install the dependencies:
 
-# Установка приложения
-
-Скачайте zip архив или пропишите в терминале:
-
-`gh repo clone iamlorddop/cipher`
-
-Вы установили проект, вам нужно перейти в папку приложения и установить зависимости, для этого:
-
-```
-../cipher cd crypto
-../cipher/crypto npm install
+```bash
+cd cryptifyhub-app
+npm install
 ```
 
-Для того чтобы запустить приложение в командной строке пропишите:
+# Getting Started
 
-`../cipher/crypto npm run dev`
+First, run the development server:
 
-Для того чтобы забилдить приложение в командной строке пропишите:
-
-`../cipher/crypto npm run build`
-
-Для просмотра билда приложения в командной строке пропишите:
-
-`../cipher/crypto npm run preview`
-
-## Работа с scorm пакетом
-
-В приложении используется [SCORM API Wrapper](https://github.com/allanhortle/pipwerks-scorm-api-wrapper), для работы с ним читайте документацию.
-Для сборки SCORM-пакета используется [Simple SCORM Packager](https://github.com/lmihaidaniel/simple-scorm-packager)
-
-Для указания текущей версии приложения необходимо открыть файл `scoPackager.js` и в настройках указать нужную версию. Файл находится:
-
-```
-../cipher/crypto/scoPackager.js
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-Чтобы собрать SCORM-пакет в терминале пропишите:
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+# Working with SCORM Package
+
+The application uses [SCORM API Wrapper](https://github.com/allanhortle/pipwerks-scorm-api-wrapper), to work with it, read the documentation.
+
+To build the SCORM package, use [Simple SCORM Packager](https://github.com/lmihaidaniel/simple-scorm-packager)
+
+To build the SCORM package:
+
+```bash
+cd cryptifyhub-app
+npm run scopackager
 ```
-../cipher cd crypto
-../cipher/crypto npm run package-scorm
-```
-
-Архив SCORM-пакета находится:
-
-`../cipher/crypto/scorm_packages`
-
-# Команда проекта
-
-[Юлия](https://github.com/iamlorddop)
-
-[Александр](https://github.com/drinklean)
-
-Максим
-
-Яна
-
-Эмилия
-
-Кирилл
