@@ -1,0 +1,1 @@
+export { Scorm } from '@/shared/libs/scorm';

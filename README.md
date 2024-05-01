@@ -1,10 +1,10 @@
 # CryptifyHub
 
-**CryptifyHub** is a web application for teaching the basics of cryptography.
+**CryptifyHub** это веб-приложение для обучения основам криптографии.
 
 # Installation
 
-You have installed the project, you need to go to the application folder and install the dependencies:
+Вы установили проект, вам нужно перейти в директорию cryptifyhub-app и установить зависимости:
 
 ```bash
 cd cryptifyhub-app
@@ -13,7 +13,7 @@ npm install
 
 # Getting Started
 
-First, run the development server:
+Сначала запустите проект локально:
 
 ```bash
 npm run dev
@@ -25,15 +25,15 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Откройте [http://localhost:3000](http://localhost:3000) в своем браузере, чтобы увидеть результат.
 
-# Working with SCORM Package
+# Работа с SCORM пакетом
 
-The application uses [SCORM API Wrapper](https://github.com/allanhortle/pipwerks-scorm-api-wrapper), to work with it, read the documentation.
+В приложении используется [SCORM API Wrapper](https://github.com/allanhortle/pipwerks-scorm-api-wrapper), чтобы работать с ним следуйте документации.
 
-To build the SCORM package, use [Simple SCORM Packager](https://github.com/lmihaidaniel/simple-scorm-packager)
+Для сборки SCORM пакета используется [Simple SCORM Packager](https://github.com/lmihaidaniel/simple-scorm-packager)
 
-To build the SCORM package:
+Сборка SCORM-пакета:
 
 ```bash
 cd cryptifyhub-app
